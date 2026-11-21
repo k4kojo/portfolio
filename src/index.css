@@ -1,0 +1,21 @@
+:root {
+  --paper: #f7f7f2;
+  --ink: #173336;
+  --teal: #126b62;
+  --text: #647477;
+  --mint: #ddf3e9;
+  --citrus: #d8f276;
+  --pill: #eef3ef;
+  font-family: Arial, sans-serif;
+  color: var(--ink);
+  background-color: var(--paper);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+}
