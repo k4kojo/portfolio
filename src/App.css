@@ -22,18 +22,6 @@
   align-items: center;
 }
 
-.site-header button {
-  background: var(--teal);
-  color: var(--paper);
-  width: 150px;
-  height: 40px;
-  border: none;
-  border-radius: 20px;
-  margin-left: 24px;
-  font: inherit;
-  cursor: pointer;
-}
-
 .site-header .brand {
   font-size: 24px;
   font-weight: 700;
@@ -44,15 +32,6 @@
   color: var(--teal);
 }
 
-.site-header button:hover {
-  background: #0d514a;
-}
-
-.site-header button:focus-visible {
-  outline: 2px solid var(--teal);
-  outline-offset: 4px;
-}
-
 .hero {
   max-width: 1120px;
   margin: 0 auto;
@@ -61,60 +40,19 @@
   justify-content: space-between;
 }
 
-.hero-left h1 {
-  text-wrap: wrap;
-}
-
-.hero-left h4,
-.hero-left span {
-  color: var(--teal);
-}
-
-.hero-right {
-  background-color: var(--pill);
-  width: 100%;
-  max-width: 480px;
-  height: auto;
-  padding: 32px 32px;
-  border-radius: 20px;
-}
-
-.hero-right ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.hero-actions {
   display: flex;
-  flex-direction: column;
   gap: 16px;
+  margin-top: 24px;
+  flex-wrap: wrap;
 }
 
-.hero-right li {
-  display: flex;
-  gap: 24px;
-  border-bottom: 1px solid #dce4de;
+.hero-actions button {
+  margin-left: 0;
 }
 
-.hero-right li:last-child {
-  border-bottom: none;
-}
-
-.hero-right p {
-  margin: 0;
-}
-
-.hero-right h5 {
-  margin: 0 0 16px;
-  font-size: 12px;
-  color: var(--teal);
-}
-
-.hero-right li > p {
-  color: var(--teal);
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.label {
-  font-size: 12px;
-  font-weight: 600;
+.hero-actions button:first-child {
+  width: auto;
+  padding: 0 24px;
+  white-space: nowrap;
 }

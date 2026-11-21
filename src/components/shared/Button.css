@@ -1,0 +1,29 @@
+button {
+  background: var(--teal);
+  color: var(--paper);
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  margin-left: 24px;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0d514a;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 4px;
+}
+
+button.button-inverted {
+  background-color: transparent;
+  color: var(--teal);
+}
+
+button.button-inverted:hover {
+  border: 1px solid;
+}

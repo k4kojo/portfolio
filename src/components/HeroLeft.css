@@ -1,0 +1,8 @@
+.hero-left h1 {
+  text-wrap: wrap;
+}
+
+.hero-left h4,
+.hero-left span {
+  color: var(--teal);
+}

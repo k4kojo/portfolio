@@ -1,0 +1,48 @@
+.hero-right {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  padding: 32px 0px;
+}
+
+.hero-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero-right li {
+  display: flex;
+  margin-bottom: 8px;
+  padding-bottom: 10px;
+  gap: 24px;
+  border-bottom: 1px solid #dce4de;
+}
+
+.hero-right li:last-child {
+  border-bottom: none;
+}
+
+.hero-right p {
+  margin: 0;
+}
+
+.hero-right h5 {
+  margin: 0 0 16px;
+  font-size: 12px;
+  color: var(--teal);
+}
+
+.hero-right li > p {
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 600;
+}
