@@ -1,0 +1,39 @@
+.section-label {
+  margin: 0 0 12px;
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.projects h2 {
+  margin: 0 0 8px;
+  color: var(--ink);
+  font-size: 32px;
+}
+
+.project-description {
+  margin: 0 0 16px;
+  color: var(--text);
+  width: 50%;
+  line-height: 1.6;
+}
+
+.project-status {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 16px;
+  border-radius: 999px;
+  background-color: var(--citrus);
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.snapshot-description {
+  color: var(--text);
+  max-width: 50ch;
+}
+
+.snapshot-stack {
+  color: var(--teal);
+}

@@ -42,7 +42,12 @@
   font-weight: 700;
 }
 
-.label {
+.hero-right li > div > p {
+  color: var(--text);
+}
+
+.hero-right li > div > .label {
+  color: var(--ink);
   font-size: 12px;
   font-weight: 600;
 }

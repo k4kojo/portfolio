@@ -6,3 +6,44 @@
 .hero-left span {
   color: var(--teal);
 }
+
+.hero-left p,
+h5 {
+  color: var(--text);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.hero-actions button {
+  margin-left: 0;
+}
+
+.hero-actions button:first-child {
+  width: auto;
+  padding: 0 24px;
+  white-space: nowrap;
+}
+
+.core-toolkit ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.core-toolkit li {
+  padding: 6px 12px;
+  border: 1px solid var(--teal);
+  border-radius: 999px;
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 600;
+}

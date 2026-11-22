@@ -21,6 +21,22 @@ const HeroLeft = () => {
         <Button name="SEE SELECTED WORK" />
         <Button name="Contact" inverted />
       </div>
+      <div className="core-toolkit">
+        <h5>CORE TOOLKIT</h5>
+        <ul>
+          <li>Javascript</li>
+          <li>Typescript</li>
+          <li>React</li>
+          <li>React Native</li>
+          <li>Tailwind CSS</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>MongoDB</li>
+          <li>Postgres</li>
+          <li>Rest APIs</li>
+          <li>Git / Github</li>
+        </ul>
+      </div>
     </div>
   );
 };

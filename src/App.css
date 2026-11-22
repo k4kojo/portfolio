@@ -1,17 +1,27 @@
-.site-header {
+.site-header,
+.hero,
+.projects {
   max-width: 1120px;
   margin: 0 auto;
   padding: 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 24px;
-  flex-wrap: wrap;
+
   border-bottom: 1px solid #dce4de;
 }
 
+.site-header,
+.hero {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-header {
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
 .site-header a {
-  color: var(--ink);
+  color: var(--text);
   text-decoration: none;
 }
 
@@ -23,6 +33,7 @@
 }
 
 .site-header .brand {
+  color: var(--ink);
   font-size: 24px;
   font-weight: 700;
 }
@@ -30,29 +41,4 @@
 .site-header a:hover,
 .site-header a:focus-visible {
   color: var(--teal);
-}
-
-.hero {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 24px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.hero-actions {
-  display: flex;
-  gap: 16px;
-  margin-top: 24px;
-  flex-wrap: wrap;
-}
-
-.hero-actions button {
-  margin-left: 0;
-}
-
-.hero-actions button:first-child {
-  width: auto;
-  padding: 0 24px;
-  white-space: nowrap;
 }

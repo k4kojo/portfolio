@@ -5,10 +5,12 @@ import Button from './components/shared/Button';
 import './App.css';
 import HeroLeft from './components/HeroLeft';
 import HeroRight from './components/HeroRight';
+import Card from './components/Card';
+import Projects from './components/Projects';
 
 function App() {
   return (
-    <React.Fragment>
+    <div>
       <header className="site-header">
         <a className="brand" href="#">
           Portfolio
@@ -25,8 +27,11 @@ function App() {
           <HeroLeft />
           <HeroRight />
         </section>
+        <section className="projects">
+          <Projects />
+        </section>
       </main>
-    </React.Fragment>
+    </div>
   );
 }
 
