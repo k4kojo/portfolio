@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FiMail } from 'react-icons/fi';
 
 import './Footer.css';
 
@@ -23,18 +25,46 @@ const Footer = () => {
       <section className="upcoming-projects">
         <h2>Upcoming Projects</h2>
         <ul>
-          <li>Job Application Tracker</li>
+          <li>AI Customer Support Copilot</li>
+          <li>AI Document Intelligence & Workflow Automation Platform</li>
         </ul>
       </section>
       <section id="contact" className="contact">
         <h2>Contact</h2>
         <ul>
           <li>
-            <a href="https://github.com/k4kojo">GitHub</a>
+            <a target="_blank" href="https://github.com/k4kojo">
+              <FaGithub aria-hidden="true" />
+              GitHub
+            </a>
           </li>
           <li>
-            <a href="mailto:mintahsylvesterkojo@gmail.com">
-              mintahsylvesterkojo@gmail.com
+            <a
+              target="_blank"
+              href="mailto:mintahsylvesterkojo@gmail.com"
+              aria-label="Email me"
+            >
+              <FiMail aria-hidden="true" />
+              Email
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/sylvester-mintah-978908286/"
+            >
+              <FaLinkedin aria-hidden="true" />
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://instagram.com/k_4kojo"
+              aria-label="Email me"
+            >
+              <FaInstagram aria-hidden="true" />
+              Instagram
             </a>
           </li>
         </ul>
