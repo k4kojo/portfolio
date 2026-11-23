@@ -1,0 +1,49 @@
+.site-footer {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 32px 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 32px;
+  border-top: 1px solid #dce4de;
+}
+
+.site-footer > section {
+  min-width: 0;
+}
+
+.site-footer h2 {
+  margin: 0 0 12px;
+  color: var(--ink);
+  font-size: 20px;
+}
+
+.site-footer p,
+.site-footer li {
+  color: var(--text);
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.site-footer a {
+  color: var(--teal);
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.site-footer a:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 3px;
+  text-decoration: underline;
+}
