@@ -1,11 +1,10 @@
 .site-footer {
-  max-width: 1120px;
+  background-color: var(--pill);
   margin: 0 auto;
-  padding: 32px 24px;
+  padding: 24px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
   gap: 32px;
-  border-top: 1px solid #dce4de;
 }
 
 .site-footer > section {
