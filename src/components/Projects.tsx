@@ -1,44 +1,127 @@
 import React from 'react';
 
-import './Projects.css';
 import Card from './shared/Card';
 
-const Projects = () => {
+import './Projects.css';
+import { FiCheck, FiClock } from 'react-icons/fi';
+
+type ProjectProps = {
+  name: string;
+  project_description: string;
+  status: string;
+  stack: string[];
+  image?: string | null;
+  repo: string;
+};
+
+const dummyProjects: ProjectProps[] = [
+  {
+    name: 'Job Application Tracker',
+    project_description:
+      'Track job applications, interviews, and follow-ups in one place.',
+    status: 'IN PROGRESS',
+    stack: ['React', 'TypeScript', 'Node.js', 'PostgreSQL'],
+    image:
+      'https://images.unsplash.com/photo-1772588627342-5ec373e236d8?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D',
+    repo: 'https://github.com/k4kojo/react-project-frontend',
+  },
+  {
+    name: 'Movie App',
+    project_description:
+      'Discover popular and trending movies, search titles, and explore detailed movie information.',
+    status: 'COMPLETED',
+    stack: [
+      'React Native',
+      'Expo',
+      'TypeScript',
+      'NativeWind',
+      'TMDB API',
+      'Appwrite',
+    ],
+    image: '',
+    repo: 'https://github.com/k4kojo/movie-app',
+  },
+  {
+    name: 'Recipe App API',
+    project_description:
+      'A Node.js backend for saving and managing users’ favorite recipes.',
+    status: 'COMPLETED',
+    stack: [
+      'Node.js',
+      'Express 5',
+      'Drizzle ORM',
+      'Neon Serverless',
+      'PostgreSQL',
+      'Cron',
+    ],
+    image: '',
+    repo: 'https://github.com/k4kojo/recipe-app',
+  },
+  {
+    name: 'MediConnect API',
+    project_description:
+      'A role-based healthcare API for appointments, patient and doctor profiles, prescriptions, lab results, and notifications.',
+    status: 'COMPLETED',
+    stack: [
+      'Node.js',
+      'Express 5',
+      'PostgreSQL',
+      'Drizzle ORM',
+      'Zod',
+      'JWT',
+      'Socket.IO',
+    ],
+    image: '',
+    repo: 'https://github.com/k4kojo/healthcare-management-system-api',
+  },
+];
+
+const Projects = () => (
+  <>
+    <h1 className="section-label">PROJECTS</h1>
+
+    <div className="projects-grid">
+      {dummyProjects.map((project) => (
+        <ProjectCard key={project.name} {...project} />
+      ))}
+    </div>
+  </>
+);
+
+const ProjectCard = ({
+  name,
+  project_description,
+  status,
+  stack,
+  image,
+  repo,
+}: ProjectProps) => {
+  const imageSrc =
+    image && image.trim().length > 0 ? image : '/project-fallback.svg';
+
   return (
     <div className="project-content">
-      <p className="section-label">01 / CURRENT PROJECT</p>
-      <h2>Your Places</h2>
-      <p className="project-description">
-        A full-stack place-sharing project with a React frontend and an express
-        / MongoDB backend.
-      </p>
-      <span className="project-status">IN PROGRESS</span>
+      <h4>{name}</h4>
+      <p className="project-description">{project_description}</p>
+      <span
+        className={`project-status ${
+          status === 'COMPLETED'
+            ? 'project-status--completed'
+            : 'project-status--in-progress'
+        }`}
+      >
+        {status === 'COMPLETED' ? <FiCheck /> : <FiClock />}
+        {status}
+      </span>
       <Card>
-        <div className="project-snapshot">
-          <div className="snapshot-copy">
-            <p className="section-label">PROJECT SNAPSHOT</p>
-            <p className="snapshot-description">
-              A place-sharing web-app exploring the full stack: React UI,
-              Express API, MongoDB.
-            </p>
-            <p className="snapshot-stack">
-              React • Node.js • Express • MongoDB
-            </p>
-            <a
-              href="https://github.com/k4kojo/react-project-frontend"
-              target="_blank"
-              className="snapshot-link"
-            >
-              GitHub
-            </a>
-          </div>
+        <a target="_blank" href={repo} className="project-snapshot">
           <div className="snapshot-preview">
-            <img
-              src="https://images.unsplash.com/photo-1791913896369-680a318cc07b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-              alt=""
-            />
+            <img src={imageSrc} alt="" />
           </div>
-        </div>
+          <div className="snapshot-copy">
+            <p className="snapshot-stack">{stack.join(' • ')}</p>
+          </div>
+        </a>
       </Card>
     </div>
   );

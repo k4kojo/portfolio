@@ -1,6 +1,6 @@
 .card {
   background-color: var(--pill);
-  width: 100%;
+  width: auto;
   height: auto;
   padding: 32px;
   border-radius: 20px;

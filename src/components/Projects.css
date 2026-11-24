@@ -1,11 +1,12 @@
 .project-content {
-  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
   padding-bottom: 24px;
-  border-bottom: 1px solid var(--stroke);
 }
 
 .section-label {
-  margin: 0 0 12px;
+  margin: 24px 0;
   color: var(--teal);
   font-size: 12px;
   font-weight: 700;
@@ -20,49 +21,42 @@
 .project-description {
   margin: 0 0 16px;
   color: var(--text);
-  width: 50%;
   line-height: 1.6;
 }
 
 .project-status {
-  display: inline-block;
+  display: inline-flex;
+  align-self: self-start;
+  align-items: center;
+  gap: 6px;
   padding: 6px 12px;
   margin-bottom: 16px;
   border-radius: 999px;
-  background-color: var(--citrus);
   color: var(--ink);
   font-size: 12px;
   font-weight: 700;
 }
 
+.project-status--in-progress {
+  background-color: var(--citrus);
+}
+
+.project-status--completed {
+  background-color: var(--mint);
+}
+
+.card {
+  padding: 10px;
+  cursor: pointer;
+}
+
 .project-snapshot {
-  display: flex;
-  justify-content: space-between;
-}
-
-.snapshot-copy {
-  display: flex;
-  flex-direction: column;
-}
-
-.snapshot-copy a {
   text-decoration: none;
-  margin-top: auto;
-}
-
-.snapshot-description {
-  color: var(--text);
-  max-width: 50ch;
-}
-
-.snapshot-stack,
-.snapshot-copy a {
-  color: var(--teal);
 }
 
 .snapshot-preview {
   max-height: 250px;
-  width: 50%;
+  width: 100%;
   border-radius: 12px;
 }
 
@@ -70,5 +64,33 @@ img {
   width: 100%;
   height: 100%;
   border-radius: inherit;
-  cursor: pointer;
+}
+
+.snapshot-copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+}
+
+.snapshot-stack {
+  max-width: 50ch;
+  color: var(--teal);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+@media (max-width: 1000px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .projects-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
