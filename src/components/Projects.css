@@ -1,21 +1,24 @@
+.projects {
+  border-bottom: 1px solid var(--stroke);
+  margin-bottom: 24px;
+}
+
 .project-content {
   display: flex;
   flex-direction: column;
-  margin: 10px;
   padding-bottom: 24px;
 }
 
 .section-label {
-  margin: 24px 0;
+  padding: 24px 0 0;
   color: var(--teal);
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 700;
 }
 
-.projects h2 {
+.project-content h4 {
   margin: 0 0 8px;
   color: var(--ink);
-  font-size: 32px;
 }
 
 .project-description {
@@ -80,7 +83,7 @@ img {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
+  gap: 24px;
 }
 
 @media (max-width: 1000px) {

@@ -77,15 +77,14 @@ const dummyProjects: ProjectProps[] = [
 ];
 
 const Projects = () => (
-  <>
+  <div className="projects">
     <h1 className="section-label">PROJECTS</h1>
-
     <div className="projects-grid">
       {dummyProjects.map((project) => (
         <ProjectCard key={project.name} {...project} />
       ))}
     </div>
-  </>
+  </div>
 );
 
 const ProjectCard = ({
