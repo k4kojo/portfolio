@@ -6,6 +6,7 @@ type ButtonProp = {
   name: string;
   style?: CSSProperties;
   inverted?: boolean;
+  href?: string;
 };
 
 const Button = ({ name, style, inverted }: ButtonProp) => {
