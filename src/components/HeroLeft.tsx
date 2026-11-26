@@ -14,12 +14,12 @@ const HeroLeft = () => {
         <span>to API.</span>
       </h1>
       <p>
-        Thoughtful React experiences, backend by Node.js,
-        <br /> Express, and MongoDB. Learning by building end to end.
+        Thoughtful React experiences, backed by Node.js, Express, and MongoDB.
+        Learning by building end to end.
       </p>
       <div className="hero-actions">
-        <Button name="SEE SELECTED WORK" />
-        <Button name="Contact" inverted />
+        <Button name="SEE SELECTED WORK" href="#projects" />
+        <Button name="Contact" href="#contact" inverted />
       </div>
       <div className="core-toolkit">
         <h5>CORE TOOLKIT</h5>

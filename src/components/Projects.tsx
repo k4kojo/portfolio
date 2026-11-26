@@ -16,16 +16,6 @@ type ProjectProps = {
 
 const dummyProjects: ProjectProps[] = [
   {
-    name: 'Job Application Tracker',
-    project_description:
-      'Track job applications, interviews, and follow-ups in one place.',
-    status: 'IN PROGRESS',
-    stack: ['React', 'TypeScript', 'Node.js', 'PostgreSQL'],
-    image:
-      'https://images.unsplash.com/photo-1772588627342-5ec373e236d8?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D',
-    repo: 'https://github.com/k4kojo/react-project-frontend',
-  },
-  {
     name: 'Movie App',
     project_description:
       'Discover popular and trending movies, search titles, and explore detailed movie information.',

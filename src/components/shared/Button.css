@@ -1,29 +1,32 @@
-button {
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 24px;
+  border: 0;
+  border-radius: 20px;
   background: var(--teal);
   color: var(--paper);
-  width: 150px;
-  height: 40px;
-  border: none;
-  border-radius: 20px;
-  margin-left: 24px;
   font: inherit;
+  text-decoration: none;
   cursor: pointer;
 }
 
-button:hover {
+.button:hover {
   background: #0d514a;
 }
 
-button:focus-visible {
+.button:focus-visible {
   outline: 2px solid var(--teal);
   outline-offset: 4px;
 }
 
-button.button-inverted {
-  background-color: transparent;
+.button.button-inverted {
+  background: transparent;
   color: var(--teal);
 }
 
-button.button-inverted:hover {
-  border: 1px solid;
+.button.button-inverted:hover {
+  background: var(--mint);
 }
