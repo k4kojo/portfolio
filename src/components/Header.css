@@ -12,7 +12,7 @@
   flex-wrap: wrap;
 }
 
-.site-header a {
+.site-header a:where(:not(.button)) {
   color: var(--text);
   text-decoration: none;
 }
@@ -30,9 +30,13 @@
   font-weight: 700;
 }
 
-.site-header a:hover,
-.site-header a:focus-visible {
+.site-header a:where(:not(.button)):hover,
+.site-header a:where(:not(.button)):focus-visible {
   color: var(--teal);
+}
+
+.site-header .menu-toggle {
+  display: none;
 }
 
 @media (max-width: 768px) {
